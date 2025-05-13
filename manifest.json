@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Copy Cookie to Clipboard",
+  "version": "1.1",
+  "description": "Copies the value of a configured cookie for the current domain to the clipboard when the icon is clicked.",
+  "permissions": [
+    "activeTab",
+    "cookies",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": {
+      "48": "Brainleaf-Christmas-Cookies-Christmas-cookie-man.48.png"
+    },
+    "default_title": "Copy Cookie" // Generic fallback title
+  },
+  "icons": {
+    "48": "Brainleaf-Christmas-Cookies-Christmas-cookie-man.48.png"
+  }
+}
